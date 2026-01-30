@@ -170,8 +170,8 @@ body {
 }
 
 .avatar {
-    width: 100px;
-    height: 100px;
+    width: 130px;
+    height: 130px;
     margin: 0 auto;
     background: var(--glass-bg);
     backdrop-filter: blur(10px);
@@ -182,6 +182,14 @@ body {
     justify-content: center;
     color: var(--text-primary);
     transition: all var(--transition-speed) var(--transition-bounce);
+}
+
+.avatar-img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
 }
 
 .avatar:hover {
