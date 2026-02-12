@@ -6,21 +6,21 @@
     --primary-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     --secondary-gradient: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
     --accent-gradient: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
-    
+
     --glass-bg: rgba(255, 255, 255, 0.08);
     --glass-border: rgba(255, 255, 255, 0.15);
     --glass-shadow: rgba(0, 0, 0, 0.1);
-    
+
     --text-primary: #ffffff;
     --text-secondary: rgba(255, 255, 255, 0.8);
     --text-muted: rgba(255, 255, 255, 0.6);
-    
+
     --spacing-xs: 0.5rem;
     --spacing-sm: 1rem;
     --spacing-md: 1.5rem;
     --spacing-lg: 2rem;
     --spacing-xl: 3rem;
-    
+
     --border-radius: 1.5rem;
     --transition-speed: 0.3s;
     --transition-bounce: cubic-bezier(0.68, -0.55, 0.265, 1.55);
@@ -94,12 +94,16 @@ body {
 }
 
 @keyframes float {
-    0%, 100% {
+
+    0%,
+    100% {
         transform: translate(0, 0) scale(1);
     }
+
     33% {
         transform: translate(50px, -50px) scale(1.1);
     }
+
     66% {
         transform: translate(-30px, 30px) scale(0.9);
     }
@@ -117,6 +121,7 @@ body {
         opacity: 0;
         transform: translateY(30px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);
@@ -147,6 +152,7 @@ body {
     0% {
         transform: translateX(-100%) translateY(-100%) rotate(45deg);
     }
+
     100% {
         transform: translateX(100%) translateY(100%) rotate(45deg);
     }
@@ -163,6 +169,7 @@ body {
         opacity: 0;
         transform: scale(0.8);
     }
+
     to {
         opacity: 1;
         transform: scale(1);
@@ -351,13 +358,19 @@ body {
 
 /* Instagram Gradient */
 .social-link.instagram:hover {
-    background: linear-gradient(135deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+    background: linear-gradient(135deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
     border-color: transparent;
 }
 
-/* TikTok Gradient */
-.social-link.tiktok:hover {
-    background: linear-gradient(135deg, #00f2ea 0%, #ff0050 100%);
+/* LinkedIn Gradient */
+.social-link.linkedin:hover {
+    background: linear-gradient(135deg, #0077b5 0%, #0e76a8 100%);
+    border-color: transparent;
+}
+
+/* YouTube Gradient */
+.social-link.youtube:hover {
+    background: linear-gradient(135deg, #FF0000 0%, #CC0000 100%);
     border-color: transparent;
 }
 
@@ -367,9 +380,9 @@ body {
     border-color: transparent;
 }
 
-/* Facebook Gradient */
-.social-link.facebook:hover {
-    background: linear-gradient(135deg, #4267B2 0%, #385898 100%);
+/* Portfolio Gradient */
+.social-link.portfolio:hover {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     border-color: transparent;
 }
 
@@ -434,9 +447,12 @@ body {
 
 /* Loading Animation */
 @keyframes pulse {
-    0%, 100% {
+
+    0%,
+    100% {
         opacity: 1;
     }
+
     50% {
         opacity: 0.6;
     }
@@ -444,6 +460,7 @@ body {
 
 /* Accessibility */
 @media (prefers-reduced-motion: reduce) {
+
     *,
     *::before,
     *::after {
